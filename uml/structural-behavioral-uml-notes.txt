@@ -1,0 +1,127 @@
+!!!!!!Take 2 seconds to read the .readme file.!!!!!!!!!!!!!!!!
+
+
+///////////////////////////////////Section Introduction\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+!!!!Big takeaway from this section: there is not one diagram that's perfect for every situation 
+    and diagrams have a lot of overlap.
+
+1. There are 2 major types of diagrams that are offered by UML.
+    a. Structural:
+        :Structural diagrams are any type of diagrams that model the way a system is architected. 
+        In other words, a class diagram is one of the most popular structural diagrams out there. 
+        It's a way of defining the different class names, attributes, and method names that belong 
+        inside of a system that you're building.
+
+    b. Behavioral:
+        :Behavioral diagrams are much different, behavioral diagrams care about how your system 
+        behaves. It cares about different things like what type of messages does one system send to 
+        another or what types of permissions does user A have versus User B. Those are the types of 
+        questions that you're going to model out inside of behavioral systems.
+
+/////////////////////////////////Overview of Structural Diagrams in UML\\\\\\\\\\\\\\\\\\\\\\\\\
+
+1. There are three main types of structural diagrams:
+    a. Class diagrams:
+        : The class diagram is probably the most popular and most common type of diagram that you're 
+        going to see. Used by smaller organizations when they want to have one diagram to reference for
+        how their system was put together.
+        : The elements that make up a class diagram are:
+            1. name
+            2. attributes
+            3. operations
+        : Example:
+            1. See class-diagram-breakdown image:
+                a. the top class name is "topic."
+                b. The next box is where you put all your attributes.
+                c. if you're going to take this class diagram and translate it to use a Mysql or a Postgres 
+                   database table, you would create a table called topic or topics.
+                e. You know you're going to have a title, slug, created at and updated at field for your 
+                   topics table. It's going to have a set of data types, titles are going to be a string, 
+                   slug is going to be a string and created at and updated at are both going to be Date Time 
+                   fields.
+
+    b. Deployment diagrams: At a high level, deployment diagrams give us the ability to model how an entire 
+       system architecture should be configured. If we have an application that has multiple servers, multiple 
+       places where we can store code and it's going to communicate with the system, a deployment diagram is 
+       perfect for setting that up. 
+        : Deployment diagrams are made up of 6 different elements. (see deployment-diagram1 image)
+            1. Nodes: In the example image are Staging ENV, Preprod ENV, and Productive ENV
+            2. Components: The boxes inside the nodes, which could be their own applications, processes, etc.
+            3. Artifacts
+            4. Links
+            5. Dependencies
+            6. Associations
+
+
+    c. Package diagrams: Used to see map out how we are organizing the entire code base.
+        : Package Diagram Elements: (see package-diagram-example image)
+            1. type
+            2. classifier
+            3. class
+            4. use case
+            5. component
+            6. package
+            7. constraint
+            8. dependency
+            9. event
+
+/////////////////////////////////////////Overview of Behavioral Diagrams in UML\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+1. Behavioral diagrams illustrate how our system should behave, how it should act, how it should interact with 
+   the internal systems, how it interacts with outside actors/individuals/users that are going to be working with the 
+   system.
+
+   a. 4 types of behavioral diagrams:
+        : activity diagram (see activity-diagram image)
+            1. very easy for non-technical users to see and understand.
+            2. Activity diagrams are high-level because all we care about are activities. We're not getting into the 
+               attribute names, method or function names here. We want to see what the experience looks like for a user.
+            3. Activity diagram elements:
+                a. Initial State or Starting Point
+                b. Activity or Action State
+                c. Action Flow
+                d. Decisions or Branching
+                e. Guards
+                f. Final state or End Point
+
+        : use case diagram (see use-case-diagram image)
+            1. High level. They give you the ability to show everything that a user has access to.
+            2. Good for when building out an application that has an authorization system.
+            3. Elements inside the diagram: 
+                a. use cases: inside the circles in example. Everything that the actors have access to.
+                b. actors: marketing specialist and customer in example.
+                c. subsystems
+                d. relationships
+
+        : state machine diagram (see state-machine-diagram image)
+            1. What is being visualized is what data looks like and actions at various stages of a software systems lifecycle.
+            2. The state machine diagram is a way of breaking down parts into small pieces and showing what users will have 
+               access to and show decisions that they have.
+            3. Elements:
+                a. Entry Point: user in example. 
+                b. choices
+                c. constraints
+                d. states: each rectangle in example is a different state. We have a user who's a visitor, based off of their 
+                   decisions, if they submitted a form then they can change into a converted state.
+                e. transitions
+            4. You may notice this looks very similar to an activity diagram, that's a good observation. You'll notice the 
+               longer you go into UML is there is not one diagram that's perfect for every situation and diagrams have a lot of 
+               overlap.
+
+        : sequence diagram (see sequence-diagram image)
+            1. common diagram that many senior-level developers like to use. The reason is, the more advanced as a developer you 
+               get, the more you start to think of your application as a system that sends messages either internally or externally. 
+               Being able to visualize what those messages look like is incredibly important.
+            2. They speak to how the code needs to operate. If done well, it will make the implementation of the project much easier 
+               to build.
+            3. The elements that comprise a sequence diagram:
+                a. Class Roles or Participants
+                b. Activation or Execution Occurrence
+                c. Messages: If you start at the beginning, from data to parse, each one of those lines with an arrow that is a message.
+                             Messages can be sent to a module itself, the first one where it says "delete all symbols except numbers" 
+                             is a message from the parse engine to itself.
+                d. Lifelines
+
+
+
