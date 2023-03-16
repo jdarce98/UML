@@ -1,0 +1,15 @@
+////////////////////////Elements of a UML Activity Diagram\\\\\\\\\\\\\\\\\\\\\\\\\
+
+(see activity-diagram-images\activity-diagram.png)
+
+1. very easy for non-technical users to see and understand.
+2. Activity diagrams are high-level because all we care about are activities. We're not getting into the 
+   attribute names, method or function names here. We want to see what the experience looks like for a user.
+3. Activity diagram elements:
+    a. Initial State or Starting Point
+    b. Activity or Action State
+    c. Action Flow
+    d. Decisions or Branching
+    e. Guards
+    f. Final state or End Point
+    g. Swim Lanes
