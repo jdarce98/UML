@@ -1,0 +1,25 @@
+/////////////////////////Overview of the Elements of a UML Sequence Diagram\\\\\\\\\\\\\\\\\\\\\\\\
+
+A. sequence diagram: behavioral type diagram (see sequence-diagram image)
+    1. common diagram that many senior-level developers like to use. The reason is, the more advanced as a developer you 
+        get, the more you start to think of your application as a system that sends messages either internally or externally. 
+        Being able to visualize what those messages look like is incredibly important.
+    2. They speak to how the code needs to operate. If done well, it will make the implementation of the project much easier 
+        to build.
+    3. The elements that comprise a sequence diagram:
+        a. Class Roles or Participants: (see sequence-diagram-images\class-roles-participants.png)
+            * In example, user dashboard, commission settings, and commission validation engine.
+        b. Activation or Execution Occurrence: (sequence-diagram-images\activation-execution-occurence.png)
+            * represented by the 1 long grey rectangle and the two short white rectangles.
+            * Essentially they are the event when something transpires when it either receives a message or when it sends it. 
+              What that tells me from a developer's perspective, when I see that I know there's going to probably have to be some 
+              type of method there's going to have to be a module or something that can manage that communication.
+        c. Messages: (see sequence-diagram-images\messages.png)
+            * The messages are represented by lines with arrows going in the direction that the message is being sent. They also 
+              can have names. In this case each one of them have an associated response.
+            * A message is not a method that you can use to send and recieve input.      
+        d. Lifelines: (see sequence-diagram-images\lifelines.png)
+            * Lifelines are those dotted lines that go from the participant all the way down for the entire diagram.
+            * What they really represent is to make it easier for us to see each one of the stages and to give a spot where the 
+              messages can be sent. They don't actually do anything, they're more there so we can know at what stage a message is 
+              going to be sent to one of the participants and so on and so forth.

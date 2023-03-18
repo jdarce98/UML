@@ -1,0 +1,24 @@
+////////////////////////Overview of the Elements of a UML Deployment Diagram\\\\\\\\\\\\\\\\\\
+
+(see deployment-diagram-images\deployment-diagram.png and deployment-diagram-images\associations.png)
+
+A. Deployment diagrams: Type of structural diagram. At a high level, deployment diagrams give us the ability to model how an entire 
+       system architecture should be configured. If we have an application that has multiple servers, multiple 
+       places where we can store code and it's going to communicate with the system, a deployment diagram is 
+       perfect for setting that up. 
+        : Deployment diagrams are made up of 6 different elements. (see deployment-diagram1 image)
+            1. Nodes: Essentially, every component of a deployment diagram is a node. Anything that has some type of system that 
+                      you can communicate with. Interface, server, etc. Represented as 3d cubes on image. 
+                      (see deployment-diagram-images\deployment-diagram.png)
+            2. Components: The boxes inside the nodes, which could be their own applications, processes, etc. The component is 
+                           the kind of rounded rectangle storing the angular web service. A component could be an application, a web 
+                           service, it could be the API itself or it could be a database, there are numerous things a component could be. Usually, 
+                           it is the actual piece of software that manages communication and handles the business logic for the node that it 
+                           resides on.
+            3. Artifacts: Artifacts are those items that are surrounded by the angle brackets
+            4. Links: The links are those lines that are connecting each one of the nodes.
+            5. Dependencies: Dependencies put a twist on what links do. Links connect our items, if we want to be more specific, we can add 
+                             dependencies. Dependencies are represented by that dotted line with arrows going in the direction of the node.
+            6. Associations: The association element is very similar to the link and the dependency. It is a way of connecting all of the nodes 
+                             and showing how they're associated. In this case, we have an entire system that represents how a user and an API can 
+                             connect with a web application that leverages a load balancer. 

@@ -1,0 +1,33 @@
+A. state machine diagram (see state-machine-diagram-images)
+    1. The name implies a lot and what we're essentially trying to do is visualize what our application (or what a 
+       feature of our application) will look like and how it can transition from one state to another state.
+
+    2. This could be as low level as being able to represent what a button looks like or what actions can be 
+       performed on a button based on how the user's role is set up. It can be that low level or it can be a very 
+       high-level kind of concept where it's similar to an activity diagram.
+
+       * difference between state machine and activity diagram: an activity diagram works a little bit more like a 
+         flow chart, you can have a user that goes to one page and they go to another page, they can be asked these 
+         questions and different behavior ensues. State machine cares more about the different actions that can 
+         change a user's state.
+
+    3. Elements:
+        a. Entry Point: an activity diagram works a little bit more like a flow chart, you can have a user that goes 
+           to one page and they go to another page, they can be asked these questions and different behavior ensues. 
+
+        b. choices: an activity diagram works a little bit more like a flow chart, you can have a user that goes to one 
+           page and they go to another page, they can be asked these questions and different behavior ensues. 
+
+        c. constraints: the "Yes" and the "No." That is a way of being able to ask, in this case of the form was submitted or not. 
+           In other diagrams that we've worked through, the constraint was also called a "guard."
+        
+        d. states: The state is obviously one of the most important parts of the entire diagram, right here they are represented 
+           by the rounded edge rectangle. We have two states here, we have a user that is a visitor and a user that has been 
+           converted.
+
+        e. transition: how you get from one state to another, that's represented by a line with an arrow showing the direction 
+           of that transition. You can also have other items, like choices, that are placed in-between those. 
+
+    4. You may notice this looks very similar to an activity diagram, that's a good observation. You'll notice the 
+        longer you go into UML is there is not one diagram that's perfect for every situation and diagrams have a lot of 
+        overlap.

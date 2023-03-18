@@ -1,0 +1,21 @@
+
+(package-diagram-images\package-diagram.png)
+A. Package diagrams: Used to see map out how we are organizing the entire code base. 
+   Simply ways of wrapping some of the other components from other diagrams and what they represent.
+   For example: If we have a class diagram and we want to:
+   where you want to list out in detail each one of the attributes
+   you want to list the different operations
+   the connectivity between the two
+   if they have multiplicity or not
+   all kinds of things that are very low level.
+
+    : Package Diagram Elements: (see package-diagram-example image)
+        1. type
+        2. classifier
+        3. class
+        4. use case
+        5. component
+        6. package
+        7. constraint
+        8. dependency
+        9. event

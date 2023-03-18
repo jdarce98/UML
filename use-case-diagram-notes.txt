@@ -1,0 +1,10 @@
+//////////////////////////Overview of UML Use Case Diagram Elements\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+A. use case diagram (see use-case-diagram-images\use-case-diagram.png)
+    1. High level. They give you the ability to show everything that a user has access to.
+    2. Good for when building out an application that has an authorization system.
+    3. Elements inside the diagram: 
+        a. use cases: inside the circles in example. Everything that the actors have access to.
+        b. actors: marketing specialist and customer in example.
+        c. subsystems
+        d. relationships
